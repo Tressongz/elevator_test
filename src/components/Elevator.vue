@@ -22,11 +22,12 @@ defineProps({
 </script>
 
 <style lang="sass" scoped>
+@import "src/styles/variable"
 .elevator
   position: absolute
   bottom: 0
-  width: 95px
-  height: 110px
+  width: $elevator-width
+  height: $elevator-height
   background-color: #5dea5d
   box-sizing: content-box
   -webkit-transition: -webkit-transform 1000ms

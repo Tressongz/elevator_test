@@ -7,8 +7,9 @@
 </script>
 
 <style lang="sass" scoped>
+@import "src/styles/variable"
 .floor
-  width: 95px
-  height: 110px
+  width: $elevator-width
+  height: $elevator-height
   border-bottom: 1px dotted dodgerblue
 </style>
