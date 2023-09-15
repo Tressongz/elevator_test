@@ -50,14 +50,12 @@ import Floor from "./components/Floor.vue";
 import {onMounted, ref, watch} from "vue";
 
 const elevators = ref([
-    {id: 1, floor: 1, isFree: true, direction: 'idle', doorState: 'closed'},
-    {id: 2, floor: 1, isFree: true, direction: 'idle', doorState: 'closed'},
-    {id: 3, floor: 1, isFree: true, direction: 'idle', doorState: 'closed'}
+    {id: 1, floor: 1, isFree: true, direction: 'idle', doorState: 'closed'}
 ])
 const queueCalls = ref ([])
 const floorHeight = 111
 const floorsWorking = ref([])
-const floors = ref(Number(localStorage.floors) ? Number(localStorage.floors) : 6)
+const floors = ref(Number(localStorage.floors) ? Number(localStorage.floors) : 5)
 
 init()
 
